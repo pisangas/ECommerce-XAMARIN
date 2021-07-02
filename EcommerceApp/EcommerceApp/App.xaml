@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcommerceApp.App">
+    <Application.Resources>
+        <Style TargetType="StackLayout" x:Key="BackStack">
+            <Setter Property="BackgroundColor" Value="#f7f5f4"/>
+            <Setter Property="Margin" Value="20,50,20,50"/>
+        </Style>
+
+        <Style TargetType="Frame" x:Key="FrameLogin">
+            <Setter Property="Margin" Value="20,20,20,50"/>
+            <Setter Property="HasShadow" Value="True"/>
+            <Setter Property="CornerRadius" Value="20"/>
+            <Setter Property="BorderColor" Value="Red"/>
+            <Setter Property="BackgroundColor" Value="#f6f6f6"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="SubmitButton">
+            <Setter Property="TextColor" Value="White"/>            
+            <Setter Property="BackgroundColor" Value="#CE0B06"/>
+            <Setter Property="CornerRadius" Value="20"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="TittleLabel">
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="TextColor" Value="#CE0B06"/>
+            <Setter Property="Margin" Value="0,50,0,0"/>
+        </Style>
+        
+        <Style TargetType="Entry" x:Key="FormEntry">
+            <Setter Property="PlaceholderColor" Value="#80274D"/>
+        </Style>        
+    </Application.Resources>
+</Application>

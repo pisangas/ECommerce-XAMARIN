@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcommerceApp.Pages.SignUpPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource BackStack}">
+            <Label Text="SIGN UP" Style="{StaticResource TittleLabel}"/>
+            <Frame Style="{StaticResource FrameLogin}">
+                <StackLayout
+                    Spacing="20">
+                    <Label
+                        Text="Create an Account"
+                        Style="{StaticResource TittleLabel}"/>
+                    <Entry
+                        Text="{Binding Fullname}"
+                        Placeholder="Full Name"
+                        Keyboard="Text"
+                        Style="{StaticResource FormEntry}"
+                        />
+                    <Entry
+                        Text="{Binding Email}"
+                        Placeholder="Email"
+                        Keyboard="Email"
+                        Style="{StaticResource FormEntry}"
+                        />
+                    <Entry
+                        Text="{Binding Password}"
+                        Placeholder="Password"
+                        IsPassword="True"
+                        Style="{StaticResource FormEntry}"/>
+                    <Entry
+                        Text="{Binding ConfirmPassword}"
+                        Placeholder="Confirm Password"
+                        IsPassword="True"
+                        Style="{StaticResource FormEntry}"
+                        />
+                    <Label
+                        HorizontalTextAlignment="Center"
+                        Text="by creating an account you agree to our Terms of Service and Privacy Policy"
+                        FontSize="Small"
+                        TextColor="#80274D"
+                        />
+                </StackLayout>
+            </Frame>            
+            
+            <Button
+                Text="continue"
+                Style="{StaticResource SubmitButton}"
+                Command="{Binding ContinueCommand}"/>
+                
+            <Label
+                Text="Already have an account?"
+                HorizontalTextAlignment="Center"
+                TextColor="#80274D"/>
+            <Button
+                Command="{Binding LoginCommand}"
+                Text="login"
+                Style="{StaticResource SubmitButton}"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
