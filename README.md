@@ -1,69 +1,64 @@
-# ECommerce-XAMARIN
+![Xamarin.Forms](https://img.shields.io/badge/Xamarin.Forms-UI-blue?logo=xamarin&logoColor=white)  
+![C#](https://img.shields.io/badge/C%23-Programming-green?logo=csharp&logoColor=white)  
+![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-lightgrey)  
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-> Aplicación móvil de comercio electrónico desarrollada con Xamarin.Forms / C# (.NET).
+# 🛒 ECommerce-XAMARIN
 
----
+## 📌 Descripción
+Este proyecto es una aplicación móvil de **E-Commerce** desarrollada con **Xamarin.Forms** y **C#**.  
+El objetivo es simular el funcionamiento de una tienda en línea, permitiendo explorar productos, agregarlos al carrito y realizar pedidos de forma sencilla.
 
-##  Descripción
+## 🚀 Tecnologías utilizadas
+- **Xamarin.Forms** – Desarrollo multiplataforma (Android & iOS).  
+- **C#** – Lenguaje principal.  
+- **MVVM** – Patrón de arquitectura para separación de lógica y vista.  
+- **SQLite** – Almacenamiento local de datos.  
+- **REST API** (si aplicas un backend).  
 
-**ECommerce-XAMARIN** es una aplicación multiplataforma (Android e iOS) creada con **Xamarin.Forms** y **C#**. Su objetivo es ofrecer una experiencia básica de e-commerce: navegación por productos, detalles, carrito de compras y un flujo de compra simulado.
-
----
-
-![C#](https://img.shields.io/badge/-C%23-blue?style=for-the-badge&logo=csharp&logoColor=white)
-![Xamarin](https://img.shields.io/badge/-Xamarin-292EED?style=for-the-badge&logo=xamarin&logoColor=white)
-
-
-Funcionalidades (ejemplos generales)
-
-Pantalla de lista de productos (mock).
-
-Vista de detalles del producto.
-
-Carrito de compras con actualización de cantidad y precio.
-
-Simulación de proceso de checkout.
-
-Navegación simple entre pantallas.
-
-Mejoras sugeridas
-
-Sustituir datos simulados por una API real o base de datos local (SQLite).
-
-Añadir sistema de autenticación / perfiles de usuario.
-
-Integrar pagos ficticios o APIs externas (Stripe, PayPal).
-
-Implementar notificaciones push o seguimiento de pedidos.
-
-Optimizar UI con controles avanzados (CollectionView, animaciones, etc.).
-
-Migrar a .NET MAUI (como alternativa moderna a Xamarin.Forms) 
-GitHub
-
-##  Estructura del proyecto (sugerida)
-```text
+## 📂 Estructura del proyecto
 ECommerce-XAMARIN/
-├── ECommerce.Xamarin.Android/   ← Proyecto Android
-├── ECommerce.Xamarin.iOS/       ← Proyecto iOS (si aplica)
-├── ECommerce.Xamarin.Shared/    ← Lógica compartida (modelos, servicios, view models)
-└── ECommerce-XAMARIN.sln        ← Solución para Visual Studio / VS Code
+
+├── Models/ # Clases y entidades (Producto, Usuario, Pedido, etc.)
+
+├── Views/ # Interfaces gráficas (pantallas de login, productos, carrito, etc.)
+
+├── ViewModels/ # Lógica de negocio y binding para MVVM
+
+├── Services/ # Conexión con APIs o base de datos
+
+├── Resources/ # Estilos, imágenes y recursos compartidos
+
+└── App.xaml # Configuración inicial de la app
 
 
-.
+📱 Funcionalidades principales
 
-Contribuciones
+🔑 Autenticación de usuarios (login / registro).
 
-¡Se aceptan aportes! Puedes colaborar mediante:
+🛍️ Catálogo de productos con categorías.
 
-Reportar ideas o errores en Issues.
+🛒 Carrito de compras.
 
-Proponer mejoras con Pull Requests.
+📦 Gestión de pedidos.
 
-Compartir feedback o features futuras.
+💾 Persistencia local con SQLite.
 
-Autor
+🤝 Contribuciones
 
-Eduardo Gil Rivas – @pisangas
+¡Las contribuciones son bienvenidas!
 
-LinkedIn: https://www.linkedin.com/in/eduardogilrivas/
+Haz un fork del proyecto.
+
+Crea una rama con tu feature: git checkout -b feature/nueva-funcionalidad.
+
+Realiza tus cambios y haz commit: git commit -m "Agrego nueva funcionalidad".
+
+Envía un pull request.
+
+-------
+📬 Contacto
+
+👨‍💻 Autor: Eduardo (pisangas)
+
+🔗 GitHub: @pisangas
